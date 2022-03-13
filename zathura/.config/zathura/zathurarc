@@ -1,0 +1,79 @@
+# key bindings
+map k 				scroll half-up
+map <S-k> 			scroll full-up
+map j				scroll half-down
+map <S-j>			scroll full-down
+map <C-e>			scroll down
+map <C-y>			scroll up
+
+map [normal] i 			recolor
+map [fullscreen] i		recolor
+
+
+# options
+## use the width auto adjustment mode by default
+set adjust-open "width"
+
+## using the clipboard as selection clipboard
+set selection-clipboard		clipboard
+
+## Disable horizontally centered search results
+set search-hadjust		"false"
+
+## Use basename of the file in the window title
+set window-title-basename	"true"
+
+## keeping original hue when recoloring
+set recolor-keephue		"true"
+
+## keep the original image colors while recoloring
+set recolor-reverse-video	"true"
+
+
+# styling
+## remove the vertical and horizontal padding of the statusbar and notificationbar
+set statusbar-h-padding 	0
+set statusbar-v-padding 	0
+
+## color scheme
+set default-bg			"#272822"
+set default-fg			"#FFFFFF"
+
+set completion-fg		"#FFFFFF"
+set completion-bg		"#272822"
+set completion-group-bg		"#272822"
+set completion-group-fg		"#468588" 
+set completion-highlight-bg	"#005577"
+set completion-highlight-fg	"#FFFFFF"
+
+set notification-bg		"#272822"
+set notification-fg		"#FFFFFF"
+set notification-error-bg	"#3c3836"
+set notification-error-fg	"#FFFFFF"
+set notification-warning-bg	"#3c3836"
+set notification-warning-fg	"#FFFFFF"
+
+set index-bg			"#272822"
+set index-active-bg		"#005577"
+set index-fg			"#FFFFFF"
+set index-active-fg		"#FFFFFF"
+
+set inputbar-bg			"#21252D" 
+set inputbar-fg			"#FFFADE" 
+set statusbar-bg		"#21252D" 
+set statusbar-fg		"#D68EB2" 
+
+set highlight-color		"#005577"
+set highlight-active-color	"#66D9EF"
+set highlight-transparency	0.4
+
+set render-loading-fg		"#FFEE79" 
+set render-loading-bg		"#18191E" 
+
+set tabbar-bg			"red"
+set tabbar-fg			"white"
+set tabbar-focus-bg		"red"
+set tabbar-focus-fg		"white"
+
+set recolor-lightcolor		"#272822"
+set recolor-darkcolor		"#FFFFFF"
