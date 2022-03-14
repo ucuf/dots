@@ -41,8 +41,8 @@ set default-fg			"#FFFFFF"
 
 set completion-fg		"#FFFFFF"
 set completion-bg		"#272822"
-set completion-group-bg		"#272822"
-set completion-group-fg		"#468588" 
+set completion-group-bg		"#222222"
+set completion-group-fg		"#FFFFFF"
 set completion-highlight-bg	"#005577"
 set completion-highlight-fg	"#FFFFFF"
 
@@ -58,17 +58,18 @@ set index-active-bg		"#005577"
 set index-fg			"#FFFFFF"
 set index-active-fg		"#FFFFFF"
 
-set inputbar-bg			"#21252D" 
-set inputbar-fg			"#FFFADE" 
-set statusbar-bg		"#21252D" 
-set statusbar-fg		"#D68EB2" 
+set inputbar-bg			"#21252D"
+set inputbar-fg			"#FFFADE"
+
+set statusbar-bg		"#005577"
+set statusbar-fg		"#FFFFFF"
 
 set highlight-color		"#005577"
 set highlight-active-color	"#66D9EF"
 set highlight-transparency	0.4
 
-set render-loading-fg		"#FFEE79" 
-set render-loading-bg		"#18191E" 
+set render-loading-fg		"#FFEE79"
+set render-loading-bg		"#18191E"
 
 set tabbar-bg			"red"
 set tabbar-fg			"white"
