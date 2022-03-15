@@ -71,10 +71,5 @@ set highlight-transparency	0.4
 set render-loading-fg		"#FFEE79"
 set render-loading-bg		"#18191E"
 
-set tabbar-bg			"red"
-set tabbar-fg			"white"
-set tabbar-focus-bg		"red"
-set tabbar-focus-fg		"white"
-
 set recolor-lightcolor		"#272822"
 set recolor-darkcolor		"#FFFFFF"
