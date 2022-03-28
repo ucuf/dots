@@ -1,14 +1,22 @@
 # key bindings
-map k 				scroll half-up
-map <S-k> 			scroll full-up
-map j				scroll half-down
-map <S-j>			scroll full-down
-map <C-e>			scroll down
-map <C-y>			scroll up
+map [normal] k 			scroll half-up
+map [fullscreen] k 		scroll half-up
+map [normal] <S-k> 		scroll full-up
+map [fullscreen] <S-k> 		scroll full-up
+map [normal] j			scroll half-down
+map [fullscreen] j		scroll half-down
+map [normal] <S-j>		scroll full-down
+map [fullscreen] <S-j>		scroll full-down
+map [normal] <C-e>		scroll down
+map [fullscreen] <C-e>		scroll down
+map [normal] <C-y>		scroll up
+map [fullscreen] <C-y>		scroll up
 
 map [normal] i 			recolor
 map [fullscreen] i		recolor
 
+map [normal] <C-b>		toggle_statusbar
+map [fullscreen] <C-b>		toggle_statusbar
 
 # options
 ## use the width auto adjustment mode by default
