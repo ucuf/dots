@@ -1,0 +1,30 @@
+# Verbosity and settings.
+alias mv='mv -vi';
+alias rm='rm -vI'
+alias cp='cp -vi'
+alias cal='cal -m' # Display Monday as the first day of the week
+alias gdb='gdb -q' # Quite
+alias e="${EDITOR:-vi}"
+alias irssi='irssi --home=$XDG_CONFIG_HOME/irssi'
+alias tree='tree -C'
+alias feed='newsboat -q' # Quite
+#alias wget='wget --hsts-file='$XDG_CACHE_HOME/wget-hsts''
+
+# Colorize commands when possible.
+alias ls='ls  --color=always --group-directories-first -F'
+alias l.="ls --all --ignore='*'"
+alias ll='ls --human-readable -l'
+alias la='ls -a'
+alias grep='grep --color=always'
+alias diff='diff --color=always'
+
+# These common commands are just too long! Abbreviate them.
+alias cc='cc -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/user/X11R6/include -I-lfontconfig -lXft'
+alias gitf='git --git-dir=$XDG_DATA_HOME/dotfiles --work-tree=$HOME'
+alias tshp='trash-put'
+alias tshe='trash-empty'
+alias tshr='trash-restore'
+alias tshrm='trash-rm'
+alias lst='trash-list'
+alias tsm='transmission-remote'
+alias dis='LESS="--RAW-CONTROL-CHARS --ignore-case --quit-if-one-screen" less'
