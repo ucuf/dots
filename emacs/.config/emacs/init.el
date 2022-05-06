@@ -89,6 +89,7 @@
 (setq org-confirm-babel-evaluate nil)
 
 (require 'org-tempo)
+(add-to-list 'org-structure-template-alist '("sh" . "src shell :results output"))
 (add-to-list 'org-structure-template-alist '("clang" . "src C :results output"))
 (add-to-list 'org-structure-template-alist '("java" . "src java :results output"))
 
@@ -132,13 +133,27 @@
 
 ;; test configuration
 ;; Font
+(set-face-attribute 'default nil :font "Ubuntu Mono 14" )
 (set-frame-font "Ubuntu Mono 14" nil t)
 
 ;; interactively do things with buffers and files
 (require 'ido)
 (ido-mode t)
 
+;; src block indentation / editing / syntax highlighting
+(setq org-src-preserve-indentation nil ;; do not put two spaces on the left
+      org-src-tab-acts-natively t)
+(add-hook 'org-mode-hook
+         (lambda () (setq evil-auto-indent t)))
+
 (setq gc-cons-threshold (* 2 1000 1000))
+
+;; c lang
+(setq c-default-style "linux"
+      c-basic-offset 4)
+(setq-default c-basic-offset 8
+	      tab-width 8
+	      indent-tabs-mode t)
 
 ;; Configuration testing
 
