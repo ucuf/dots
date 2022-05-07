@@ -1,0 +1,225 @@
+<config>
+ <paths>
+  <path recursive="1">/home/usef/.local/share/stardict</path>
+ </paths>
+ <sounddirs/>
+ <dictionaryOrder id="0" name="">
+  <mutedDictionaries/>
+ </dictionaryOrder>
+ <inactiveDictionaries id="0" name="">
+  <mutedDictionaries/>
+ </inactiveDictionaries>
+ <groups nextId="10">
+  <group id="7" name="En - En" shortcut="Alt+E">
+   <dictionary name="AHD Indo-European and Semitic Roots Supplement (En-En)">3efbd232e4b9143fe1c4123e49b01648</dictionary>
+   <dictionary name="American Heritage Dictionary 4th Ed. (En-En)">3e50f99c055dafbbe0666c39d41c9d81</dictionary>
+   <dictionary name="American_Idioms 2nd Ed (En-En)">4c6fc01781e7826f18c09561719305c9</dictionary>
+   <dictionary name="An Asperger dictionary of everyday expressions (En-En)">1867d3fed049c561ea583e71ebc87b4f</dictionary>
+   <dictionary name="Cambridge Advanced Learners Dictionary 3th Ed. (En-En)">0bae179106565b4a0d8f67ccbe0f9ade</dictionary>
+   <dictionary name="Cambridge Dictionary of American Idioms (En-En)">ccac28713d072fc4e5ae891db7807625</dictionary>
+   <dictionary name="Chambers Dictionary 11th Ed. (En-En)">8224d5ec1184faaab8f6e5b822592a6f</dictionary>
+   <dictionary name="Collins Thesaurus (En-En)">96013b579046c437b6249aa7804bee0f</dictionary>
+   <dictionary name="Concise Oxford English Dictionary (En-En)">776550218d7da29d6062b0d403386b2e</dictionary>
+   <dictionary name="Concise Oxford Thesaurus 2nd Ed. (Eng-Eng)">0c43e07a718a631f25300d928b48d026</dictionary>
+   <dictionary name="English Dialects 3.0 (En-En)">29edea39c978c25404909bc8449dc03d</dictionary>
+   <dictionary name="English Wiktionary">affcf9678e7bfe701c9b071f97eccba3</dictionary>
+   <dictionary name="Longman Dictionary of Common Errors (En-En)">33784a510fafefd20170a52ad31178ed</dictionary>
+   <dictionary name="Longman Dictionary of Contemporary English 5th Ed. (En-En)">249a4820c4e9f70acbd2f89865efcef8</dictionary>
+   <dictionary name="Longman Dictionary of Contemporary English Extras 5th Ed. (En-En)">f27f17772eef5e5e4f6ad118ba98d164</dictionary>
+   <dictionary name="Longman Language Activator 2nd Ed. (En-En)">0bc8674e7f0d24fabfc769a4e2874032</dictionary>
+   <dictionary name="Longman Pronunciation Dictionary 3rd Ed. (En-En)">a5840955486ebf00cd094d1f950da562</dictionary>
+   <dictionary name="Macmillan English Dictionary (En-En)">e289cba8df75a9f218264511c485e1db</dictionary>
+   <dictionary name="Macmillan English Thesaurus (En-En)">defc28f8a628d1321bcca73e0a00802b</dictionary>
+   <dictionary name="Merriam-Webster's Advanced Learner's Dictionary (En-En)">d40fd6e0d185cd067c385078c2f8a9ce</dictionary>
+   <dictionary name="Merriam-Webster's Collegiate 11th Ed. (En-En)">988272dc48d607ee1b21f562c36c6d9f</dictionary>
+   <dictionary name="Merriam-Webster's Collegiate Thesaurus (En-En)">a8dfa92c7a48f1be0753c14ba31e24d5</dictionary>
+   <dictionary name="Oxford Advanced Learner's Dictionary 8th Ed. (En-En)">9a253420a670d063f629b6ad77a0f1ae</dictionary>
+   <dictionary name="Oxford Collocations Dictionary 2nd Ed. (En-En)">091eedc0463078e5b7effdefac54f4e4</dictionary>
+   <dictionary name="Oxford English Dictionary 2nd Ed. P1 (En-En)">2a843cb7b21bb49d5cd63ab71c6c05b1</dictionary>
+   <dictionary name="Oxford English Dictionary 2nd Ed. P2 (En-En)">c92e918da5f6b45707025d253e8913e7</dictionary>
+   <dictionary name="Oxford Guide to British and American Culture (En-En)">5904a0e67ba958fb9bb0cd71fb6faf4b</dictionary>
+   <dictionary name="Random House Webster's Unabridged Dictionary (En-En)">a68bab910e2a6ed2acd94c73e3c59f6e</dictionary>
+   <dictionary name="Roget's II The New Thesaurus 3th Ed. (En-En)">4b5e6c8ac55cafda2820808d46453cbe</dictionary>
+   <dictionary name="Soule's Dictionary of English Synonyms (En-En)">e69b28beaf1c73b5558d4ae4b72c77ab</dictionary>
+   <dictionary name="The BBI Combinatory Dictionary of English (En-En)">2071afb565694c75123725744678e5d6</dictionary>
+   <dictionary name="The Chambers Thesaurus (En-En)">a031d6ce1938bf0aad484a8393ae289f</dictionary>
+   <dictionary name="The Idiom Connection (En-En)">181ae93e908c974f691bdd0e215162ea</dictionary>
+   <dictionary name="Urban Dictionary P1 (En-En)">b27a2ee85efc2b2ab10cc464fa29c868</dictionary>
+   <dictionary name="Urban Dictionary P2 (En-En)">9de1c598aab054c48ca73f196039cf3f</dictionary>
+   <dictionary name="Webster's Third New International Dictionary, Unabridged (En-En)">8709c3d56350a269e5a7e8d36552ec24</dictionary>
+   <dictionary name="WordNet® 3.0 (En-En)">918f35e92e9a25a55892f853633a8402</dictionary>
+   <mutedDictionaries>
+    <mutedDictionary>affcf9678e7bfe701c9b071f97eccba3</mutedDictionary>
+   </mutedDictionaries>
+  </group>
+  <group id="9" name="Unassigned">
+   <dictionary name="GNU Collaborative International Dictionary of English">9ccb8d00e26bcd5d5422be4972610618</dictionary>
+   <dictionary name="">17b85c960dc6a98de31601ec8948b02d</dictionary>
+   <dictionary name="XMLittré, ©littre.org">ae7a5c689e4f38cdc93d88c83323d930</dictionary>
+   <dictionary name="XMLittre (Fr-Fr)">421d2df8754a9c2ec382630b988ce5ad</dictionary>
+   <dictionary name="XMLittré, ©littre.org (Fr-Fr)">36736ca672a14202bf3a9a189a913897</dictionary>
+   <mutedDictionaries>
+    <mutedDictionary>9ccb8d00e26bcd5d5422be4972610618</mutedDictionary>
+    <mutedDictionary>17b85c960dc6a98de31601ec8948b02d</mutedDictionary>
+   </mutedDictionaries>
+  </group>
+  <group id="8" name="Fr - Fr" shortcut="Alt+F">
+   <dictionary name="Dictionnaire de l’Académie Française, 8ème édition (1935). (Fr-Fr)">e19b88398b0c2b09dad23a61d36acea0</dictionary>
+   <dictionary name="Dictionnaires de l’Académie française : 8ème édition (Fr-Fr)">979e419020209e4cbedfd493ddeedd2b</dictionary>
+   <dictionary name="Frensh Wiktionary">6f58bcab78155d9a92923fffe482c08a</dictionary>
+   <dictionary name="Larousse Multidico (citations) (Fr-Fr)">a95fa300aaa548741bed2c6435be697c</dictionary>
+   <dictionary name="Larousse Multidico (conjugaisons) (Fr-Fr)">e9acd1cf45f5cb3dbb67f93d8e795143</dictionary>
+   <dictionary name="Larousse Multidico (difficultés) (Fr-Fr)">84cfaf43c56793d79194b9b94d16724e</dictionary>
+   <dictionary name="Larousse Multidico (homonymes) (Fr-Fr)">22395923c6bf6dbd55c23b5a5ccf4bdf</dictionary>
+   <dictionary name="Larousse Multidico (synonymes) (Fr-Fr)">e1da5dc813caf04a312bdd91eaba6b8c</dictionary>
+   <dictionary name="XMLittre (Fr-Fr)">421d2df8754a9c2ec382630b988ce5ad</dictionary>
+   <dictionary name="XMLittré, ©littre.org (Fr-Fr)">36736ca672a14202bf3a9a189a913897</dictionary>
+   <mutedDictionaries/>
+  </group>
+ </groups>
+ <hunspell dictionariesPath=""/>
+ <transliteration>
+  <enableRussianTransliteration>0</enableRussianTransliteration>
+  <enableGermanTransliteration>0</enableGermanTransliteration>
+  <enableGreekTransliteration>0</enableGreekTransliteration>
+  <enableBelarusianTransliteration>0</enableBelarusianTransliteration>
+  <romaji>
+   <enable>0</enable>
+   <enableHepburn>1</enableHepburn>
+   <enableNihonShiki>0</enableNihonShiki>
+   <enableKunreiShiki>0</enableKunreiShiki>
+   <enableHiragana>1</enableHiragana>
+   <enableKatakana>1</enableKatakana>
+  </romaji>
+ </transliteration>
+ <forvo>
+  <enable>0</enable>
+  <apiKey></apiKey>
+  <languageCodes></languageCodes>
+ </forvo>
+ <mediawikis>
+  <mediawiki icon="" enabled="1" id="affcf9678e7bfe701c9b071f97eccba3" url="https://en.wiktionary.org/w" name="English Wiktionary"/>
+  <mediawiki icon="" enabled="1" id="6f58bcab78155d9a92923fffe482c08a" url="http://fr.wiktionary.org/w" name="Frensh Wiktionary"/>
+ </mediawikis>
+ <websites/>
+ <dictservers/>
+ <programs/>
+ <voiceEngines/>
+ <mutedDictionaries>
+  <mutedDictionary>6f58bcab78155d9a92923fffe482c08a</mutedDictionary>
+  <mutedDictionary>affcf9678e7bfe701c9b071f97eccba3</mutedDictionary>
+ </mutedDictionaries>
+ <popupMutedDictionaries/>
+ <preferences>
+  <interfaceLanguage></interfaceLanguage>
+  <helpLanguage></helpLanguage>
+  <displayStyle></displayStyle>
+  <newTabsOpenAfterCurrentOne>0</newTabsOpenAfterCurrentOne>
+  <newTabsOpenInBackground>1</newTabsOpenInBackground>
+  <hideSingleTab>0</hideSingleTab>
+  <mruTabOrder>0</mruTabOrder>
+  <hideMenubar>1</hideMenubar>
+  <enableTrayIcon>0</enableTrayIcon>
+  <startToTray>0</startToTray>
+  <closeToTray>1</closeToTray>
+  <autoStart>0</autoStart>
+  <doubleClickTranslates>1</doubleClickTranslates>
+  <selectWordBySingleClick>1</selectWordBySingleClick>
+  <escKeyHidesMainWindow>0</escKeyHidesMainWindow>
+  <zoomFactor>2.1</zoomFactor>
+  <helpZoomFactor>1</helpZoomFactor>
+  <wordsZoomLevel>0</wordsZoomLevel>
+  <enableMainWindowHotkey>0</enableMainWindowHotkey>
+  <mainWindowHotkey>Ctrl+F11, Ctrl+F11</mainWindowHotkey>
+  <enableClipboardHotkey>1</enableClipboardHotkey>
+  <clipboardHotkey>Ctrl+F1, Ctrl+F1</clipboardHotkey>
+  <enableScanPopup>0</enableScanPopup>
+  <startWithScanPopupOn>0</startWithScanPopupOn>
+  <enableScanPopupModifiers>0</enableScanPopupModifiers>
+  <scanPopupModifiers>0</scanPopupModifiers>
+  <scanPopupAltMode>0</scanPopupAltMode>
+  <scanPopupAltModeSecs>3</scanPopupAltModeSecs>
+  <ignoreOwnClipboardChanges>0</ignoreOwnClipboardChanges>
+  <scanToMainWindow>0</scanToMainWindow>
+  <ignoreDiacritics>0</ignoreDiacritics>
+  <showScanFlag>0</showScanFlag>
+  <scanPopupUseUIAutomation>1</scanPopupUseUIAutomation>
+  <scanPopupUseIAccessibleEx>1</scanPopupUseIAccessibleEx>
+  <scanPopupUseGDMessage>1</scanPopupUseGDMessage>
+  <scanPopupUnpinnedWindowFlags>0</scanPopupUnpinnedWindowFlags>
+  <scanPopupUnpinnedBypassWMHint>0</scanPopupUnpinnedBypassWMHint>
+  <pronounceOnLoadMain>0</pronounceOnLoadMain>
+  <pronounceOnLoadPopup>0</pronounceOnLoadPopup>
+  <useInternalPlayer>1</useInternalPlayer>
+  <internalPlayerBackend>Qt Multimedia</internalPlayerBackend>
+  <audioPlaybackProgram>mplayer</audioPlaybackProgram>
+  <alwaysOnTop>0</alwaysOnTop>
+  <searchInDock>0</searchInDock>
+  <historyStoreInterval>1</historyStoreInterval>
+  <favoritesStoreInterval>0</favoritesStoreInterval>
+  <confirmFavoritesDeletion>1</confirmFavoritesDeletion>
+  <proxyserver enabled="0" useSystemProxy="0">
+   <type>0</type>
+   <host></host>
+   <port>3128</port>
+   <user></user>
+   <password></password>
+   <systemProxyUser></systemProxyUser>
+   <systemProxyPassword></systemProxyPassword>
+  </proxyserver>
+  <checkForNewReleases>1</checkForNewReleases>
+  <disallowContentFromOtherSites>0</disallowContentFromOtherSites>
+  <enableWebPlugins>0</enableWebPlugins>
+  <hideGoldenDictHeader>0</hideGoldenDictHeader>
+  <maxStringsInHistory>50000</maxStringsInHistory>
+  <storeHistory>1</storeHistory>
+  <alwaysExpandOptionalParts>0</alwaysExpandOptionalParts>
+  <addonStyle>dark_theme</addonStyle>
+  <collapseBigArticles>0</collapseBigArticles>
+  <articleSizeLimit>2000</articleSizeLimit>
+  <maxDictionaryRefsInContextMenu>20</maxDictionaryRefsInContextMenu>
+  <trackClipboardChanges>0</trackClipboardChanges>
+  <synonymSearchEnabled>1</synonymSearchEnabled>
+  <fullTextSearch>
+   <searchMode>0</searchMode>
+   <matchCase>0</matchCase>
+   <maxArticlesPerDictionary>100</maxArticlesPerDictionary>
+   <maxDistanceBetweenWords>2</maxDistanceBetweenWords>
+   <useMaxArticlesPerDictionary>0</useMaxArticlesPerDictionary>
+   <useMaxDistanceBetweenWords>1</useMaxDistanceBetweenWords>
+   <dialogGeometry></dialogGeometry>
+   <disabledTypes></disabledTypes>
+   <enabled>1</enabled>
+   <ignoreWordsOrder>0</ignoreWordsOrder>
+   <ignoreDiacritics>0</ignoreDiacritics>
+   <maxDictionarySize>0</maxDictionarySize>
+  </fullTextSearch>
+ </preferences>
+ <lastMainGroupId>7</lastMainGroupId>
+ <lastPopupGroupId>0</lastPopupGroupId>
+ <popupWindowState>AAAA/wAAAAH9AAAAAAAAB2AAAAQlAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAQAAAAEAAAAaAGQAaQBjAHQAaQBvAG4AYQByAHkAQgBhAHIDAAAAAP////8AAAAAAAAAAA==</popupWindowState>
+ <popupWindowGeometry>AdnQywADAAAAAAABAAAAFAAAB4AAAAQ4AAAAAQAAABQAAAeAAAAEOAAAAAAAAAAAB4AAAAABAAAAFAAAB4AAAAQ4</popupWindowGeometry>
+ <pinPopupWindow>0</pinPopupWindow>
+ <popupWindowAlwaysOnTop>0</popupWindowAlwaysOnTop>
+ <mainWindowState>AAAA/wAAAAH9AAAAAgAAAAAAAADMAAAD/vwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAJwAAA/4AAACYAQAABwAAAAEAAAIXAAAD+/wCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAACoAAAP7AAAAawEAAAf7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAAAAACoAAADkAAAAawEAAAf7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUAAAAAKgAAA/sAAABrAQAABwAABWgAAAP7AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAK0AAAFEwAAAAAAAAAA</mainWindowState>
+ <mainWindowGeometry>AdnQywADAAAAAAAAAAAAEwAAB38AAAQ3AAAAAAAAABMAAAd/AAAENwAAAAAAAAAAB4AAAAAAAAAAEwAAB38AAAQ3</mainWindowGeometry>
+ <helpWindowGeometry>AdnQywADAAAAAAKKAAABHAAABOUAAALhAAACjAAAAR4AAATjAAAC3wAAAAAAAAAAB4AAAAKMAAABHgAABOMAAALf</helpWindowGeometry>
+ <helpSplitterState>AAAA/wAAAAEAAAACAAABBAAABAAB/////wEAAAABAA==</helpSplitterState>
+ <dictInfoGeometry></dictInfoGeometry>
+ <inspectorGeometry></inspectorGeometry>
+ <timeForNewReleaseCheck>2022-05-04T22:44:42</timeForNewReleaseCheck>
+ <skippedRelease></skippedRelease>
+ <showingDictBarNames>0</showingDictBarNames>
+ <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
+ <editDictionaryCommandLine></editDictionaryCommandLine>
+ <maxPictureWidth>0</maxPictureWidth>
+ <maxHeadwordSize>256</maxHeadwordSize>
+ <maxHeadwordsToExpand>0</maxHeadwordsToExpand>
+ <headwordsDialog>
+  <searchMode>0</searchMode>
+  <matchCase>0</matchCase>
+  <autoApply>0</autoApply>
+  <headwordsExportPath></headwordsExportPath>
+  <headwordsDialogGeometry></headwordsDialogGeometry>
+ </headwordsDialog>
+</config>

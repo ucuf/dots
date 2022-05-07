@@ -1,0 +1,6 @@
+qt:
+	keepassxc
+	goldendict
+
+gtk:
+	pcmanfm

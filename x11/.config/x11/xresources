@@ -1,0 +1,10 @@
+Nsxiv.window.background : #181818
+Nsxiv.window.foreground : #FFFFFF
+
+Nsxiv.bar.font : monospace:size=10:antialias:true:autohint=true:style=bold
+Nsxiv.bar.background : #005577
+Nsxiv.bar.foreground : #FFFFFF
+
+*.background : #181818
+*.foreground : #FFFFFF
+xterm*font : -*-fixed-*-*-normal-*-15-120-*-*-*-*-*-*

@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# This file allows you to execute commands at the beginning
+# of the X user session - before the window manager is started.
+# The xprofile file is similar in style to xinitrc.
+
+[ -r "$HOME/.profile" ] && . "$HOME/.profile"
+
+# run all system xinitrc shell scripts.
+for file in /etc/X11/xinit/xinitrc.d/* ; do
+        . "$file"
+done
+
+[ -x "$(command -v xrdb)" ] && xrdb "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources" &
+[ -x "$(command -v slstatus)" ] && slstatus &
+[ -x "$(command -v remaps)" ] && remaps &
+[ -x "$(command -v sxhkd)" ] && sxhkd &
+[ -x "$(command -v setbg)" ] && setbg &
+[ -x "$(command -v dunst)" ] && dunst &
+[ -x "$(command -v unclutter)" ] && unclutter &
+#[ -x "$(command -v transmission-daemon)" ] && transmission-daemon &

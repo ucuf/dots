@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=transmission daemon
+Type=Application
+GenericName=BitTorrent Client
+Comment=Download and share files over BitTorrent
+# Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+Keywords=torrents;downloading;uploading;share;sharing;
+Exec=transmission --add %U
+#Exec=sh -c "transmission-remote -a %U && notify-send Transmission-daemon \"Torrent added.\""
+Icon=transmission
+Terminal=true
+MimeType=application/x-bittorrent;x-scheme-handler/magnet;
+Categories=Network;FileTransfer;P2P;
+X-AppInstall-Keywords=torrent
+X-Desktop-File-Install-Version=0.26

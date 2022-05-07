@@ -8,6 +8,9 @@ super + shift + Return
 super + r
 	dmenu_run
 
+super + grave
+	st -t scratchpad -g 212x1+0+0
+
 super + w
 	$\{BROWSER:-"firefox"\}
 

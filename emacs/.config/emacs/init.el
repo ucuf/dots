@@ -74,6 +74,7 @@
   ;(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
   (setq org-todo-keywords
 	'((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d)"))))
+
 (global-set-key "\C-ca" 'org-agenda)
 
 (org-babel-do-load-languages
@@ -82,12 +83,13 @@
    (C . t)
    (shell . t)
    (java . t)
-   (sql . t)
-   (python . t)))
+   (python . t)
+   (js . t)))
 
 (setq org-confirm-babel-evaluate nil)
 
 (require 'org-tempo)
+(add-to-list 'org-structure-template-alist '("sh" . "src shell :results output"))
 (add-to-list 'org-structure-template-alist '("clang" . "src C :results output"))
 (add-to-list 'org-structure-template-alist '("java" . "src java :results output"))
 
@@ -112,16 +114,9 @@
   (setq which-key-idle-delay 0.3))
 
 ;; Theme
-(use-package doom-themes
-  :custom
-  (doom-themes-treemacs-theme "doom-colors")
-  (doom-themes-enable-bold t)
-  (doom-themes-enable-italic t)
-  :config
-  (load-theme 'doom-tomorrow-night t)
-  (doom-themes-visual-bell-config)
-  (doom-themes-treemacs-config)
-  (doom-themes-org-config))
+(use-package gruber-darker-theme
+  :ensure t)
+(load-theme 'gruber-darker t)
 
 ;; Write backups to ~/.local/share/emacs/backup/
 (setq backup-directory-alist '(("." . "~/.local/share/emacs/backup"))
@@ -135,4 +130,45 @@
 (use-package diredfl
   :init (diredfl-global-mode 1))
 
+
+;; test configuration
+;; Font
+(set-face-attribute 'default nil :font "Ubuntu Mono 14" )
+(set-frame-font "Ubuntu Mono 14" nil t)
+
+;; interactively do things with buffers and files
+(require 'ido)
+(ido-mode t)
+
+;; src block indentation / editing / syntax highlighting
+(setq org-src-preserve-indentation nil ;; do not put two spaces on the left
+      org-src-tab-acts-natively t)
+(add-hook 'org-mode-hook
+         (lambda () (setq evil-auto-indent t)))
+
 (setq gc-cons-threshold (* 2 1000 1000))
+
+;; c lang
+(setq c-default-style "linux"
+      c-basic-offset 4)
+(setq-default c-basic-offset 8
+	      tab-width 8
+	      indent-tabs-mode t)
+
+;; Configuration testing
+
+;; move the ## file to auto-save-list directory
+;; (setq auto-save-file-name-transforms '((".*" "~/.local/share/emacs/auto-save-list/" t)))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(lexic ## diredfl gruber-darker-theme which-key rainbow-delimiters evil-collection evil use-package)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

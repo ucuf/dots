@@ -1,0 +1,20 @@
+* TODO add a way to quickly access directory in the command line        :zsh:
+  for example using hash command with -d option:
+  ~Trash for the trash directory
+* TODO Make a universal named dark color scheme for dwm st dmenu and the other applications :core:
+* TODO add goldendict configuration files and themes            :goldendict:
+* TODO add font config                                             :dotfiles:
+* TODO find a batter way the handle user.js repo for firefox settings :dotfiles:
+* TODO find a way to manage the firefox extentions and their settings :dotfiles:
+* TODO fix the gtk and qt theme                                    :dotfiles:
+  - [ ] gtk theme
+  - [ ] qt theme
+* TODO find a way that in the first start of nvim the pluging manager and all the plugins get installed automaticly :nvim:
+* TODO improve the aliaes implimentation and get some aliaes from  https://github.com/romkatv/dotfiles-public/blob/master/.zshrc :shell:
+* TODO add nsxiv configuration files                                  :nsxiv:
+* TODO fix the indentation in org src block in emacs             :emacs:
+* DONE add nvim config files                                           :nvim:
+  CLOSED: [2022-05-03 Tue 21:13]
+* DONE fix the notification doesn't work                           :dotfiles:
+  CLOSED: [2022-05-03 Tue 21:12]
+
