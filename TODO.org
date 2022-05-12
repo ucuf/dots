@@ -13,6 +13,8 @@
 * TODO improve the aliaes implimentation and get some aliaes from  https://github.com/romkatv/dotfiles-public/blob/master/.zshrc :shell:
 * TODO add nsxiv configuration files                                  :nsxiv:
 * TODO fix the indentation in org src block in emacs             :emacs:
+* TODO make newsboat uses less as a pager and find a way to add color to that :newsboat:
+
 * DONE add nvim config files                                           :nvim:
   CLOSED: [2022-05-03 Tue 21:13]
 * DONE fix the notification doesn't work                           :dotfiles:

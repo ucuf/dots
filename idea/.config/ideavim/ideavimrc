@@ -9,6 +9,7 @@ set argtextobj
 set easymotion
 set textobj-entire
 set ReplaceWithRegister
+set numb
 
 """ Plugin settings -------------------------
 let g:argtextobj_pairs="[:],(:),<:>"
@@ -19,6 +20,7 @@ set so=5
 set incsearch
 set nu
 set vb
+set number relativenumber
 
 """ Idea specific settings ------------------
 set ideajoin

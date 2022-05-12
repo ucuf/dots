@@ -42,3 +42,6 @@ macro p set browser "dmenuhandler" ; open-in-browser ; set browser linkhandler
 
 # Color scheme
 include newsboat_colorscheme
+
+#test
+#pager "nvim %f"

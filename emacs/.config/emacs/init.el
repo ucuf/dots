@@ -141,10 +141,10 @@
 (ido-mode t)
 
 ;; src block indentation / editing / syntax highlighting
-(setq org-src-preserve-indentation nil ;; do not put two spaces on the left
-      org-src-tab-acts-natively t)
-(add-hook 'org-mode-hook
-         (lambda () (setq evil-auto-indent t)))
+;;(setq org-src-preserve-indentation nil ;; do not put two spaces on the left
+;;      org-src-tab-acts-natively t)
+;;(add-hook 'org-mode-hook
+;;         (lambda () (setq evil-auto-indent t)))
 
 (setq gc-cons-threshold (* 2 1000 1000))
 

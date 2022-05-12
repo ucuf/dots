@@ -28,3 +28,4 @@ export FZF_HISTORY="$XDG_DATA_HOME/fzf/history"
 export FZF_DEFAULT_OPTS="--history=$FZF_HISTORY --reverse"
 
 export _JAVA_AWT_WM_NONREPARENTING=1	# Fix for Java applications in dwm
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME:-$HOME/.config"/java

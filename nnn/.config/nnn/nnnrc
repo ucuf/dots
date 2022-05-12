@@ -5,7 +5,7 @@ downloadsPath=$(xdg-user-dir DOWNLOADS);
 moviesPath=$(xdg-user-dir MOVIES);
 
 export NNN_PLUG="p:preview-tui;t:preview-tabbed;n:bulknew;e:preview-tui-ext;c:cleanfilename;m:mtpmount;w:nmount;l:finder"
-export NNN_BMS="d:$documentsPath;D:$downloadsPath;s:~/.local/src/;b:~/.local/bin;c:~/C/;C:~/.config/;l:~/.local/share/;u:~/C/university/smi_s4;m:$moviesPath;p:~/projects"
+export NNN_BMS="d:$documentsPath;D:$downloadsPath;s:~/.local/src/;b:~/.local/bin;c:~/C/;C:~/.config/;l:~/.local/share/;u:~/university/smi_s4;m:$moviesPath;p:~/projects"
 export NNN_TRASH=1
 export NNN_OPENER="open"
 export NNN_FIFO='/tmp/nnn.fifo'

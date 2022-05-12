@@ -29,5 +29,6 @@ alias lst='trash-list'
 alias tsm='transmission-remote'
 alias dis='LESS="--RAW-CONTROL-CHARS --ignore-case --quit-if-one-screen" less'
 
-alias c="xclip -selection clipboard"
-alias v="xclip -selection clipboard -o"
+alias c='xclip -selection clipboard -in -filter'
+alias v='xclip -selection clipboard -out'
+alias x='xclip -selection clipboard -in'
