@@ -13,7 +13,7 @@
 	ll = log --oneline
 	undo = reset --soft HEAD~1
 	last = log -1 HEAD --stat
-	alias = !git config --get-regexp ^alias. | sed -e 's/alias.//' -e 's/\\ /\t/'
+	alias = !git config --get-regexp '^alias\\.' | sed -E -e \"s/^alias\\.([a-zA-Z1-9]+) (.+)/'git \\1'='\\2'/\"
 	dot = !git --git-dir=$XDG_DATA_HOME/dotfiles --work-tree=$HOME
 	graph = log --all --oneline --graph
 	log1 = log --oneline
