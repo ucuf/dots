@@ -4,23 +4,21 @@ alias rm='rm -vI'
 alias cp='cp -vi'
 alias cal='cal -m' # Display Monday as the first day of the week
 alias gdb='gdb -q' # Quite
-alias e="${EDITOR:-vi}"
-alias irssi='irssi --home=$XDG_CONFIG_HOME/irssi'
+alias e='${EDITOR:-vi}'
 alias tree='tree -C'
 alias feed='newsboat -q' # Quite
-#alias wget='wget --hsts-file='$XDG_CACHE_HOME/wget-hsts''
+alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
 
 # Colorize commands when possible.
-alias ls='ls  --color=always --group-directories-first -F'
-alias l.="ls --all --ignore='*'"
+alias ls='ls --color=auto --group-directories-first -F'
+alias l.="ls -d .*"
 alias ll='ls --human-readable -l'
 alias la='ls -a'
-alias grep='grep --color=always'
+alias grep='grep --exclude-dir={.git} --color=always'
 alias diff='diff --color=always'
 
 # These common commands are just too long! Abbreviate them.
 alias cc='cc -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/user/X11R6/include -I-lfontconfig -lXft'
-alias gitf='git --git-dir=$XDG_DATA_HOME/dotfiles --work-tree=$HOME'
 alias tshp='trash-put'
 alias tshe='trash-empty'
 alias tshr='trash-restore'
