@@ -1,45 +1,56 @@
-#!/bin/sh
+#!/bin/bash
 
-documentsPath=$(xdg-user-dir DOCUMENTS);
-downloadsPath=$(xdg-user-dir DOWNLOADS);
-moviesPath=$(xdg-user-dir MOVIES);
+XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
 
-export NNN_PLUG="p:preview-tui;n:bulknew;e:preview-tui-ext;c:cleanfilename;m:mtpmount;w:nmount;l:finder"
-export NNN_BMS="d:$documentsPath;D:$downloadsPath;s:~/.local/src/;b:~/.local/bin;c:~/C/;C:~/.config/;l:~/.local/share/;u:~/C/university/smi_s4;m:$moviesPath;p:~/Documents/projects"
-export NNN_TRASH=1
-export NNN_OPENER="open"
-export NNN_FIFO='/tmp/nnn.fifo'
-
-export NNN_COLORS='#0c020b09;4216'
-export NNN_FCOLORS='000b0c0200000600090b0b00'
-
-export NNN_ARCHIVE="\\.(rar)$"
-
-
-n()
+n ()
 {
-    # Block nesting of nnn in subshells
-    if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
-        echo "nnn is already running"
-        return
-    fi
+	local documentsPath
+	documentsPath="$(xdg-user-dir DOCUMENTS)"
+	local downloadsPath
+	downloadsPath="$(xdg-user-dir DOWNLOAD)"
+	local moviesPath
+	moviesPath="$(xdg-user-dir MOVIES)"
+	local projectsPath
+	projectsPath="$(xdg-user-dir PROJECTS)"
 
-    # The default behaviour is to cd on quit (nnn checks if NNN_TMPFILE is set)
-    # To cd on quit only on ^G, remove the "export" as in:
-    #     NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
-    # NOTE: NNN_TMPFILE is fixed, should not be modified
-    NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+	local BLK="03"
+	local CHR="03"
+	local DIR="04"
+	local EXE="02"
+	local REG="00"
+	local HARDLINK="00"
+	local SYMLINK="06"
+	local MISSING="00"
+	local ORPHAN="01"
+	local FIFO="03"
+	local SOCK="05"
+	local OTHER="00"
 
-    # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
-    # stty start undef
-    # stty stop undef
-    # stty lwrap undef
-    # stty lnext undef
+	# Block nesting of nnn in subshells
+	if [[ "${NNNLVL:-0}" -ge 1 ]]; then
+		echo "nnn is already running"
+		return
+	fi
 
-    nnn -d "$@"
+	# The behaviour is set to cd on quit (nnn checks if NNN_TMPFILE is set)
+	# If NNN_TMPFILE is set to a custom path, it must be exported for nnn to
+	# see. To cd on quit only on ^G, remove the "export" and make sure not to
+	# use a custom path, i.e. set NNN_TMPFILE *exactly* as follows:
+	#     NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+	export NNN_TMPFILE="$XDG_CONFIG_HOME/nnn/.lastd"
 
-    if [ -f "$NNN_TMPFILE" ]; then
-            . "$NNN_TMPFILE"
-            rm -f "$NNN_TMPFILE" > /dev/null
-    fi
+	NNN_TRASH=1 \
+		NNN_FIFO='/tmp/nnn.fifo' \
+		NNN_ARCHIVE="\\.(rar|zip|tar)$" \
+		NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER" \
+		NNN_OPENER="open" \
+		NNN_COLORS='#0c020b09;4216' \
+		NNN_PLUG="p:preview-tui;t:preview-tabbed;n:bulknew;e:preview-tui-ext;c:cleanfilename;m:mtpmount;w:nmount;l:finder" \
+		NNN_BMS="d:$documentsPath;D:$downloadsPath;s:~/Programming/thirdparty/;b:~/.local/bin;c:~/C/;C:~/.config/;l:~/.local/share/;u:~/university/smi_s4;m:$moviesPath;p:$projectsPath" \
+		nnn -gARedQ "$@"
+
+	if [ -r "$NNN_TMPFILE" ]; then
+		. "$NNN_TMPFILE"
+		rm -f "$NNN_TMPFILE" > /dev/null
+	fi
 }
