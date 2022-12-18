@@ -1,0 +1,11 @@
+*.background : #0f0f0f
+*.foreground : #9e9e9e
+
+/* nsxiv */
+Nsxiv.window.background: #0f0f0f
+Nsxiv.window.foreground: #9e9e9e
+
+Nsxiv.bar.font:          monospace:size=14:antialias:true:autohint=true:style=bold
+Nsxiv.bar.background:    #181818
+Nsxiv.bar.foreground:    #9e9e9e
+Nsxiv.mark.foreground:   #9e9e9e
