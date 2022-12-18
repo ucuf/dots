@@ -1,0 +1,52 @@
+# navigations
+# Vim-like keys
+bind-key k up
+bind-key j down
+bind-key l open
+bind-key h quit
+bind-key G end
+bind-key g home
+bind-key d pagedown
+bind-key u pageup
+bind-key N prev-unread
+
+bind-key R reload
+bind-key r reload-all
+
+bind-key q hard-quit
+
+# Change the default macro prefix
+unbind-key ,
+bind-key SPACE macro-prefix
+
+# feeds
+# Disable history saving
+history-limit 0
+
+# Always send notifications
+notify-always yes
+
+# The title (which is usually at the top)
+# and the keymap (usually at the bottom) hints will exchange places
+swap-title-and-hints yes
+
+# Never show keymap hints
+show-keymap-hint no
+
+# Never ask for confirmation on whether the user wants to mark a feed as read
+confirm-mark-feed-read no
+
+# Format of the title in feed list.
+# %u = Number of unread feeds
+# %t = Number of total feeds
+feedlist-title-format "Feeds (%u unread, %t total)"
+
+browser linkhandler
+macro o set browser "setsid -f mpv"; open-in-browser ; set browser linkhandler
+macro p set browser "dmenuhandler" ; open-in-browser ; set browser linkhandler
+
+# Color scheme
+include newsboat_colorscheme
+
+#test
+#pager "nvim %f"
