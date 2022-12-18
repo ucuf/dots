@@ -9,7 +9,7 @@
 [init]
 	defaultBranch = master
 [alias]
-	ls = status -sb
+	st = status -sb
 	undo = reset --soft HEAD~1
 	last = log -1 HEAD --stat
 	alias = !git config --get-regexp '^alias\\.' | sed -E -e \"s/^alias\\.([a-zA-Z1-9]+) (.+)/'git \\1'='\\2'/\"
