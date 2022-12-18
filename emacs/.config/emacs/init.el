@@ -64,16 +64,16 @@
 
 ;; Org Mode Configuration
 (use-package org
-  :hook (org-mode . efs/org-mode-setup)
   :config
 ;;  (setq org-ellipsis " ▾")
   (setq org-agenda-files
-	'("~/Documents/orgfiles/tasks.org"))
+	'("~/Documents/notes/roam-notes"))
   (setq org-log-done 'time)
   ;(require 'org-bullets)
   ;(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
   (setq org-todo-keywords
 	'((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d)"))))
+
 (global-set-key "\C-ca" 'org-agenda)
 
 (org-babel-do-load-languages
@@ -82,12 +82,13 @@
    (C . t)
    (shell . t)
    (java . t)
-   (sql . t)
+   (js . t)
    (python . t)))
 
 (setq org-confirm-babel-evaluate nil)
 
 (require 'org-tempo)
+(add-to-list 'org-structure-template-alist '("sh" . "src shell :results output"))
 (add-to-list 'org-structure-template-alist '("clang" . "src C :results output"))
 (add-to-list 'org-structure-template-alist '("java" . "src java :results output"))
 
@@ -102,6 +103,13 @@
     "h" 'dired-up-directory
     "l" 'dired-find-file))
 
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(dired-directory ((t (:foreground "#1c71d8" :weight bold)))))
+
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
 
@@ -112,16 +120,9 @@
   (setq which-key-idle-delay 0.3))
 
 ;; Theme
-(use-package doom-themes
-  :custom
-  (doom-themes-treemacs-theme "doom-colors")
-  (doom-themes-enable-bold t)
-  (doom-themes-enable-italic t)
-  :config
-  (load-theme 'doom-tomorrow-night t)
-  (doom-themes-visual-bell-config)
-  (doom-themes-treemacs-config)
-  (doom-themes-org-config))
+(use-package gruber-darker-theme
+  :ensure t)
+(load-theme 'gruber-darker t)
 
 ;; Write backups to ~/.local/share/emacs/backup/
 (setq backup-directory-alist '(("." . "~/.local/share/emacs/backup"))
@@ -131,8 +132,57 @@
       kept-new-versions      20 ; how many of the newest versions to keep
       kept-old-versions      5) ; and how many of the old
 
-;; Colourful dired
-(use-package diredfl
-  :init (diredfl-global-mode 1))
+(use-package magit
+  :ensure t)
+
+;; test configuration
+;; Font
+(set-face-attribute 'default nil :font "Ubuntu Mono 18")
+(set-frame-font "Ubuntu Mono 18" nil t)
+
+;; interactively do things with buffers and files
+(require 'ido)
+(setq ido-enable-flex-matching t);
+(setq ido-everywher t);
+(ido-mode t)
+
+;; src block indentation / editing / syntax highlighting
+;;(setq org-src-preserve-indentation nil ;; do not put two spaces on the left
+;;      org-src-tab-acts-natively t)
+;;(add-hook 'org-mode-hook
+;;         (lambda () (setq evil-auto-indent t)))
+
+
+;; c lang
+(setq c-default-style "linux"
+      c-basic-offset 4)
+(setq-default c-basic-offset 8
+	      tab-width 8
+	      indent-tabs-mode t)
+
+;; Configuration testing
+(use-package org-roam
+  :ensure t
+  :init
+  (setq org-roam-v2-ack t)
+  :custom
+  (org-roam-directory "~/Documents/notes/roam-notes")
+  (org-roam-completion-everywhere t)
+  :bind (("C-c n l" . org-roam-buffer-toggle)
+         ("C-c n f" . org-roam-node-find)
+         ("C-c n i" . org-roam-node-insert)
+         :map org-mode-map
+         ("C-M-i" . completion-at-point)
+         :map org-roam-dailies-map
+         ("Y" . org-roam-dailies-capture-yesterday)
+         ("T" . org-roam-dailies-capture-tomorrow))
+  :bind-keymap
+  ("C-c n d" . org-roam-dailies-map)
+  :config
+  (require 'org-roam-dailies) ;; Ensure the keymap is available
+  (org-roam-db-autosync-mode))
+
+ ;; move the ## file to auto-save-list directory
+ ;; (setq auto-save-file-name-transforms '((".*" "~/.local/share/emacs/auto-save-list/" t)))
 
 (setq gc-cons-threshold (* 2 1000 1000))
