@@ -1,47 +1,70 @@
-# key bindings
-map [normal] k 			scroll half-up
-map [fullscreen] k 		scroll half-up
-map [normal] <S-k> 		scroll full-up
-map [fullscreen] <S-k> 		scroll full-up
-map [normal] j			scroll half-down
-map [fullscreen] j		scroll half-down
-map [normal] <S-j>		scroll full-down
-map [fullscreen] <S-j>		scroll full-down
-map [normal] <C-e>		scroll down
-map [fullscreen] <C-e>		scroll down
-map [normal] <C-y>		scroll up
-map [fullscreen] <C-y>		scroll up
-
-map [normal] i 			recolor
-map [fullscreen] i		recolor
-
-map [normal] <C-b>		toggle_statusbar
-map [fullscreen] <C-b>		toggle_statusbar
-
 # options
 ## use the width auto adjustment mode by default
 set adjust-open "width"
 
 ## using the clipboard as selection clipboard
-set selection-clipboard		clipboard
+set selection-clipboard clipboard
 
 ## Disable horizontally centered search results
-set search-hadjust		"false"
+set search-hadjust "false"
 
 ## Use basename of the file in the window title
-set window-title-basename	"true"
+set window-title-basename "true"
 
-## keeping original hue when recoloring
-set recolor-keephue		"true"
+## Display the page number in the window title.
+set window-title-page "true"
 
-## keep the original image colors while recoloring
-set recolor-reverse-video	"true"
+## Display ~ instead of $HOME in the statusbar
+set statusbar-home-tilde "true"
+
+## Display (current page / total pages) as a percent in the statusbar
+set statusbar-page-percent "true"
+
+
+# key bindings
+map [normal]       k       scroll half-up
+map [fullscreen]   k       scroll half-up
+map [normal]       <S-k>   scroll full-up
+map [fullscreen]   <S-k>   scroll full-up
+map [normal]       j       scroll half-down
+map [fullscreen]   j       scroll half-down
+map [normal]       <S-j>   scroll full-down
+map [fullscreen]   <S-j>   scroll full-down
+map [normal]       <C-e>   scroll down
+map [fullscreen]   <C-e>   scroll down
+map [normal]       <C-y>   scroll up
+map [fullscreen]   <C-y>   scroll up
+
+map [normal]       i       recolor
+map [fullscreen]   i       recolor
+
+map [normal]       <C-b>   toggle_statusbar
+map [fullscreen]   <C-b>   toggle_statusbar
+
+map [normal]       f       adjust_window best-fit
+map [fullscreen]   f       adjust_window best-fit
+map [normal]       w       adjust_window width
+map [fullscreen]   w       adjust_window width
+
+unmap [normal]     a
+unmap [fullscreen] a
+unmap [normal]     s
+unmap [fullscreen] s
 
 
 # styling
-## remove the vertical and horizontal padding of the statusbar and notificationbar
-set statusbar-h-padding 	0
-set statusbar-v-padding 	0
+## remove the vertical and horizontal padding of the statusbar and
+## notification bar
+set statusbar-h-padding    0
+set statusbar-v-padding    0
+
+# the font size is in pt
+# set font                  "monospace bold 12"
 
 ## color scheme
 include zathura_theme
+
+# test: quick navigation between the two recent files
+map <C-6> feedkeys <S-O><Tab><Return>
+## show document information
+map <C-g> feedkeys :info<Return>

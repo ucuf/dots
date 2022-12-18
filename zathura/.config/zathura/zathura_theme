@@ -1,37 +1,55 @@
-set default-bg			"#272822"
-set default-fg			"#FFFFFF"
+# Base16 darkside
+# Author: Usef El
 
-set completion-fg		"#FFFFFF"
-set completion-bg		"#272822"
-set completion-group-bg		"#222222"
-set completion-group-fg		"#FFFFFF"
-set completion-highlight-bg	"#005577"
-set completion-highlight-fg	"#FFFFFF"
+set font                     "monospace bold 12"
 
-set notification-bg		"#272822"
-set notification-fg		"#FFFFFF"
-set notification-error-bg	"#3c3836"
-set notification-error-fg	"#FFFFFF"
-set notification-warning-bg	"#3c3836"
-set notification-warning-fg	"#FFFFFF"
+set highlight-transparency   0.4
 
-set index-bg			"#272822"
-set index-active-bg		"#005577"
-set index-fg			"#FFFFFF"
-set index-active-fg		"#FFFFFF"
+set default-bg                  "#0f0f0f"
+set default-fg                  "#9e9e9e"
 
-set inputbar-bg			"#21252D"
-set inputbar-fg			"#FFFADE"
+set index-bg                    "#0f0f0f"
+set index-fg                    "#9e9e9e"
 
-set statusbar-bg		"#005577"
-set statusbar-fg		"#FFFFFF"
+set index-active-bg             "#181818"
+set index-active-fg             "#9e9e9e"
 
-set highlight-color		"#005577"
-set highlight-active-color	"#66D9EF"
-set highlight-transparency	0.4
+set statusbar-bg                "#181818"
+set statusbar-fg                "#9e9e9e"
 
-set render-loading-fg		"#FFEE79"
-set render-loading-bg		"#18191E"
+set inputbar-bg                 "#0f0f0f"
+set inputbar-fg                 "#9e9e9e"
 
-set recolor-lightcolor		"#272822"
-set recolor-darkcolor		"#FFFFFF"
+set notification-bg             "#0f0f0f"
+set notification-fg             "#9e9e9e"
+
+set notification-error-bg       "#0f0f0f"
+set notification-error-fg       "#9e9e9e"
+
+set notification-warning-bg     "#0f0f0f"
+set notification-warning-fg     "#9e9e9e"
+
+set highlight-fg                "#e4e4e4"
+set highlight-color             "#1c71d8"
+set highlight-active-color      "#9e9e9e"
+
+set completion-bg               "#0f0f0f"
+set completion-fg               "#9e9e9e"
+
+set completion-group-bg         "#181818"
+set completion-group-fg         "#9e9e9e"
+
+set completion-highlight-bg     "#1e5098"
+set completion-highlight-fg     "#9e9e9e"
+
+set render-loading-bg           "#0f0f0f"
+set render-loading-fg           "#9e9e9e"
+
+set recolor-lightcolor          "#0f0f0f"
+set recolor-darkcolor           "#e4e4e4"
+
+## keeping original hue when recoloring
+set recolor-keephue "true"
+
+## keep the original image colors while recoloring
+set recolor-reverse-video "true"
