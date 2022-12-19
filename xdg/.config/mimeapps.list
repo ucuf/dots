@@ -1,5 +1,5 @@
 [Added Associations]
-application/rss+xml=firefox.desktop;
+application/rss+xml=chromium.desktop;firefox.desktop;
 application/x-bittorrent=org.qbittorrent.qBittorrent.desktop;
 
 [Default Applications]
@@ -14,5 +14,12 @@ image/tiff=nsxiv.desktop;
 image/webp=nsxiv.desktop;
 inode/directory=pcmanfm.desktop;
 text/plain=nvim.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/magnet=transmission.desktop;
 x-scheme-handler/terminal=xterm.desktop;
+x-scheme-handler/figma=figma-linux.desktop
+x-scheme-handler/notion=notion-app-enhanced.desktop
+notion-app-enhanced.desktop
+notion-app-enhanced.desktop
+notion-app-enhanced.desktop
