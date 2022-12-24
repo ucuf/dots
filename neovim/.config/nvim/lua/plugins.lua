@@ -120,7 +120,7 @@ return require('packer').startup(function(use)
 		end,
 	}
 
-	use '~/Programming/projects/darkside_nvim/'
+	use '~/Programming/myprojects/darkside/'
 
 	-- Testing plugins
 	use {
