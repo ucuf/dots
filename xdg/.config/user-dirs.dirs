@@ -15,5 +15,5 @@ XDG_TEMPLATES_DIR="$HOME/Documents/Templates"
 
 XDG_PODCASTS_DIR="$HOME/Media/Podcasts"
 XDG_MOVIES_DIR="$HOME/Media/Videos/movies"
-XDG_PROJECTS_DIR="$HOME/Programming/projects"
+XDG_PROJECTS_DIR="$HOME/Programming/myprojects"
 XDG_UNIVERSITY_DIR="$HOME/Documents/university"
