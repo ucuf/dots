@@ -6,7 +6,7 @@ super + shift + Return
 	$\{TERMINAL:-"/bin/xterm"\}
 
 super + r
-	dmenu_run -F
+	dmenu_run
 
 super + o; {w, d, z, p}
 	notify-send "Openning programe" \
