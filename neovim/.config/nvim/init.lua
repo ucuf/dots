@@ -2,10 +2,11 @@ vim.keymap.set('n', '[q', ':cp<cr>')
 vim.keymap.set('n', ']q', ':cn<cr>')
 
 -- require('themes')
+require('plugins')
+
 vim.cmd('source $XDG_CONFIG_HOME/nvim/colorscheme.vim')
 vim.cmd('source $XDG_CONFIG_HOME/nvim/general.vim')
 
-require('plugins')
 require('luasnip_config')
 
 local fn = vim.fn
