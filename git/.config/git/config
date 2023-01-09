@@ -15,6 +15,7 @@
 	alias = !git config --get-regexp '^alias\\.' | sed -E -e \"s/^alias\\.([a-zA-Z1-9]+) (.+)/'git \\1'='git \\2'/\"
 	ll = log --all --oneline --graph
 	log1 = log --oneline
+	ls = ls-files
 [diff]
 	tool = nvimdiff2
 [difftool "nvimdiff2"]
