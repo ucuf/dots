@@ -200,6 +200,8 @@ zle -N edit-command-line
 bindkey -M vicmd '^e' edit-command-line
 bindkey -M emacs '^[e' edit-command-line
 
+# Make Ctrl+Backspace kill a word backward
+bindkey '^H' backward-kill-word
 
 # Adding Text Objects
 autoload -Uz select-bracketed select-quoted
