@@ -48,6 +48,8 @@ hash -d semester="$university_dir/smi_s6"
 unset university_dir
 
 
+# TODO: Make the prompt shrink when the terminal column size is reduced.
+# you can use this command `sed -e 's/\x1b\[[0-9;]*m//g'` to remove the ANSI escape code
 autoload -Uz vcs_info
 precmd_functions+=( vcs_info )
 PS1='%n%F{9}@%f%M:%B%F{12}%3~%f%b${vcs_info_msg_0_}%f%(1j.[%j].)%(?.$.%F{9}\$)%f%b '
@@ -186,7 +188,7 @@ autoload edit-command-line; zle -N edit-command-line
 autoload -U edit-command-line && zle -N edit-command-line && bindkey -M vicmd "^v" edit-command-line
 
 bindkey "^?" backward-delete-char
-# K in normal mode run man for the word under the cursor
+# K in normal mode run man for the currect command
 bindkey -M vicmd "K" run-help
 
 # NOTE: uneeded in emacs mode
