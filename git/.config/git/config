@@ -9,13 +9,16 @@
 [init]
 	defaultBranch = master
 [alias]
-	st = status -sb
+	st = status --short --branch
 	undo = reset --soft HEAD~1
-	last = log -1 HEAD --stat
+	last = !git --no-pager log -1 HEAD --stat
+	# FIX: when we executing an external command this alias will show it like 'git ALIAS'='git !external-command'
+	# which is not correct we should show it like 'git ALIAS'='external-command'
 	alias = !git config --get-regexp '^alias\\.' | sed -E -e \"s/^alias\\.([a-zA-Z1-9]+) (.+)/'git \\1'='git \\2'/\"
 	ll = log --all --oneline --graph
 	log1 = log --oneline
 	ls = ls-files
+	co = checkout
 [diff]
 	tool = nvimdiff2
 [difftool "nvimdiff2"]
