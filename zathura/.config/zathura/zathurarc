@@ -46,10 +46,20 @@ map [fullscreen]   f       adjust_window best-fit
 map [normal]       w       adjust_window width
 map [fullscreen]   w       adjust_window width
 
+map [normal]       >       rotate rotate-cw
+map [fullscreen]   >       rotate rotate-cw
+map [normal]       <       rotate rotate-ccw
+map [fullscreen]   <       rotate rotate-ccw
+
+map [normal]       r       reload
+map [fullscreen]   r       reload
+
 unmap [normal]     a
 unmap [fullscreen] a
 unmap [normal]     s
 unmap [fullscreen] s
+unmap [normal]     R
+unmap [fullscreen] R
 
 
 # styling
